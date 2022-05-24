@@ -8,6 +8,7 @@ dot_env_file_exist = Path('.env').exists()
 if dot_env_file_exist:
     load_dotenv()
 TOKEN = str(os.getenv("DISCORD_BOT_TOKEN"))
+print("Successfully loaded Discord token")
 
 bot = commands.Bot(command_prefix="!")
 
